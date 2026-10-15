@@ -33,8 +33,8 @@ melakukan aktivitas sehari-hari secara lebih mandiri dan memiliki informasi tamb
 
 Dalam pembuatannya, program ini menerapkan beberapa konsep **Object-Oriented Programming (OOP)**, yaitu **enkapsulasi, inheritance, 
 polymorphism, abstraction, dan interface**. Selain itu, struktur program menggunakan pola **Model-View-Controller (MVC)** untuk 
-memisahkan pengelolaan data, interaksi pengguna, dan pengendalian alur program. Program ini juga menerapkan metode JDBC 
-(Java Database Connectivity) untuk mengintegrasikan program dengan database. Penerapan konsep-konsep tersebut bertujuan agar program 
+memisahkan pengelolaan data, interaksi pengguna, dan pengendalian alur program. Program ini juga menerapkan metode **JDBC 
+(Java Database Connectivity)** untuk mengintegrasikan program dengan database. Penerapan konsep-konsep tersebut bertujuan agar program 
 memiliki struktur yang lebih terorganisir serta memudahkan proses pengembangan dan pemeliharaan kode.
 
 
@@ -44,7 +44,7 @@ Sistem Manajemen Panti Jompo dirancang dengan tujuan sebagai berikut:
 
 - Membantu mengelola data penghuni Panti Jompo Rumah Senja secara lebih terstruktur. 
 - Mempermudah dalam melakukan proses penambahan, penampilan, pembaruan, penghapusan, dan pencarian data penghuni.
-- Mengintegrasikan program dengan database.
+- Memastikan seluruh data penghuni tersimpan secara permanen dan konsisten di dalam database.
 
 ## 1.3  Alur Singkat
 
@@ -242,23 +242,23 @@ Gambar di atas menampilkan validasi kondisi kesehatan. Pengguna tidak diperboleh
 
 ## 3.1 MVC dan Struktur File
 
-MVC (Model, View, Controller) merupakan pola atau struktur dalam pembuatan proyek yang digunakan untuk memisahkan bagian data, tampilan, dan proses pengendalian program. Penerapan MVC bertujuan agar kode program lebih terstruktur, mudah dipahami, serta memudahkan proses pengembangan dan pemeliharaan program.
+**MVC (Model, View, Controller)** merupakan pola atau struktur dalam pembuatan proyek yang digunakan untuk memisahkan bagian data, tampilan, dan proses pengendalian program. Penerapan MVC bertujuan agar kode program lebih terstruktur, mudah dipahami, serta memudahkan proses pengembangan dan pemeliharaan program.
 
 Pada proyek Sistem Manajemen Panti Jompo Rumah Senja, penerapan MVC dibagi menjadi tiga package, yaitu:
 
 | Lapisan | File | Keterangan |
 |---|---|---|
-| Model | PenghuniPanti, PenghuniIntensif, PenghuniMandiri, dan interface KunjunganKeluarga | Bertugas untuk merepresentasikan, menyimpan, dan mengelola data serta atribut yang berkaitan dengan penghuni panti. PenghuniIntensif dan PenghuniMandiri merupakan turunan dari class PenghuniPanti, sehingga dapat menerapkan konsep inheritance dalam pemrograman berorientasi objek dengan mewarisi atribut dan method dari class induknya.  Sementara itu, KunjunganKeluarga digunakan sebagai interface yang mendefinisikan perilaku atau method yang berkaitan dengan kunjungan keluarga dan dapat diimplementasikan oleh class yang membutuhkan fungsi tersebut.|
-| Controller | PantiService | Bertugas sebagai penghubung antara bagian Model dan View, sekaligus mengatur alur proses dalam program. Class PantiService menangani berbagai operasi terhadap data penghuni, seperti menambahkan, menampilkan, memperbarui, menghapus, dan mencari data berdasarkan input yang diberikan oleh pengguna. |
-| View | PantiView | Digunakan untuk menampilkan menu utama, informasi data penghuni, hasil proses, serta pesan yang diberikan oleh sistem kepada pengguna. Dengan adanya package view, proses tampilan program dapat dipisahkan dari logika pengolahan data sehingga struktur program menjadi lebih terorganisir dan mudah dipahami.
+| model | PenghuniPanti, PenghuniIntensif, PenghuniMandiri, dan interface KunjunganKeluarga | Bertugas untuk merepresentasikan, menyimpan, dan mengelola data serta atribut yang berkaitan dengan penghuni panti. PenghuniIntensif dan PenghuniMandiri merupakan turunan dari class PenghuniPanti, sehingga dapat menerapkan konsep inheritance dalam pemrograman berorientasi objek dengan mewarisi atribut dan method dari class induknya.  Sementara itu, KunjunganKeluarga digunakan sebagai interface yang mendefinisikan perilaku atau method yang berkaitan dengan kunjungan keluarga dan dapat diimplementasikan oleh class yang membutuhkan fungsi tersebut.|
+| controller | PantiService | Bertugas sebagai penghubung antara bagian Model dan View, sekaligus mengatur alur proses dalam program. Class PantiService menangani berbagai operasi terhadap data penghuni, seperti menambahkan, menampilkan, memperbarui, menghapus, dan mencari data berdasarkan input yang diberikan oleh pengguna. |
+| view | PantiView | Digunakan untuk menampilkan menu utama, informasi data penghuni, hasil proses, serta pesan yang diberikan oleh sistem kepada pengguna. Dengan adanya package view, proses tampilan program dapat dipisahkan dari logika pengolahan data sehingga struktur program menjadi lebih terorganisir dan mudah dipahami.
 
 Selain ketiga package di atas, pada struktur file program ini, saya mengguankan package lain seperti :
 
 | Lapisan | File | Keterangan |
 |---|---|---|
-| Model.DAO | PantiDAO | |
-| Utility | InputValidasi | Digunakan untuk membantu proses validasi input dari pengguna. Class ini menyediakan method yang digunakan untuk memastikan data yang dimasukkan sesuai dengan ketentuan program, seperti memvalidasi input angka, ID penghuni, serta mencegah kesalahan input yang dapat menyebabkan program mengalami error. |
-| Config | Koneksi & TestKoneksi | Class TestKoneksi disini berfungsi untuk mengetest apakah program telah tersambung dengan databse dan class Koneksi berfungsi untuk mengintegrasikan program dengan database. |
+| model.dao | PantiDAO | `model.dao` adalah package untuk kelas Data Access Object, dan `PantiDAO` bertugas menjalankan operasi data penghuni Panti Jompo Rumah Senja (tambah, tampil, ubah, hapus, cari) melalui query ke database. Pemisahan ini membuat kelas lain tidak perlu mengetahui detail SQL. |
+| utility | InputValidasi | Digunakan untuk membantu proses validasi input dari pengguna. Class ini menyediakan method yang digunakan untuk memastikan data yang dimasukkan sesuai dengan ketentuan program, seperti memvalidasi input angka, ID penghuni, serta mencegah kesalahan input yang dapat menyebabkan program mengalami error. |
+| config | Koneksi & TestKoneksi | Class TestKoneksi disini berfungsi untuk mengetest apakah program telah tersambung dengan databse dan class Koneksi berfungsi untuk mengintegrasikan program dengan database. |
 
 
 ## 3.2 Inheritance
