@@ -369,17 +369,7 @@ Dengan demikian, method yang memiliki nama sama dapat menghasilkan keluaran yang
 
 <img width="719" height="562" alt="image" src="https://github.com/user-attachments/assets/27acf0c0-e8a5-44bd-90ff-40d64d69ed57" />
 
-Gambar di atas menunjukkan proses pemanggilan method tampilkanHeaderHasil() dan tampilkanIdTidakDitemukan() sebagai implementasi dari konsep 
-polymorphism melalui metode overloading. Pemanggilan kedua method tersebut bertujuan untuk menampilkan informasi pada hasil keluaran program 
-agar lebih terstruktur dan mudah dipahami.
-
-<img width="659" height="94" alt="image" src="https://github.com/user-attachments/assets/e0d352f6-9173-4202-bb42-7f4689f1fbd1" />
-
-<img width="658" height="96" alt="image" src="https://github.com/user-attachments/assets/51c4441b-3c09-4d43-b263-cdb741d6981f" />
-
-Gambar di atas menunjukkan implementasi polymorphism metode overloading melalui pendefinisian method tampilkanHeaderHasil() dan 
-tampilkanIdTidakDitemukan() di dalam kelas yang sama. Method tampilkanHeaderHasil() berfungsi untuk menampilkan header atau judul pada hasil 
-keluaran program, sedangkan method tampilkanIdTidakDitemukan() berfungsi untuk menampilkan pesan ketika ID penghuni yang dicari tidak ditemukan.
+Gambar di atas menunjukkan penerapan overloading yang dapat dilihat pada method cariPenghuni() di dalam kelas PantiService. Method ini didefinisikan dua kali dengan nama yang sama, yaitu cariPenghuni(String namaTarget) untuk mencari penghuni berdasarkan nama, dan cariPenghuni(int idTarget) untuk mencari penghuni berdasarkan ID. Kedua method memiliki nama yang sama, tetapi berbeda pada tipe parameternya.
 
 ## 3.6 Abstraction
 
