@@ -1,5 +1,5 @@
 # DOKUMENTASI MINI PROJECT 4
-### PEMOGRAMAN BERORIENTASI OBJEK
+### PEMROGRAMAN BERORIENTASI OBJEK
 ### SISTEM MANAJEMEN PANTI JOMPO
 
 ---
@@ -134,7 +134,7 @@ Pada menu Update Usia, pengguna perlu memasukkan ID penghuni yang ingin diperbar
 
 <img width="389" height="150" alt="image" src="https://github.com/user-attachments/assets/6b35a9da-4209-4a99-896a-63deedb487c5" />
 
-Pada menu Update Kondisi, pengguna perlu measukkan ID penghuni yang ingin diperbarui kondisi kesehatannya. Pembaruan kondisi Kesehatan ini diperlukan untuk memastikan informasi yang tersimpan sesuai dengan kondisi terkini penghuni sehingga dapat membantu pihak panti dalam melakukan pemantauan dan pengelolaan kesehatan para lansianya.
+Pada menu Update Kondisi, pengguna perlu memasukkan ID penghuni yang ingin diperbarui kondisi kesehatannya. Pembaruan kondisi Kesehatan ini diperlukan untuk memastikan informasi yang tersimpan sesuai dengan kondisi terkini penghuni sehingga dapat membantu pihak panti dalam melakukan pemantauan dan pengelolaan kesehatan para lansianya.
 
 <img width="381" height="235" alt="image" src="https://github.com/user-attachments/assets/1b6c6c53-1b2b-4b3c-8ba8-26d07946cd9c" />
 
@@ -164,7 +164,7 @@ Gambar di atas menunjukkan pesan yang ditampilkan oleh sistem ketika pengguna me
 
 <img width="372" height="105" alt="image" src="https://github.com/user-attachments/assets/f47acd73-988f-4b37-833c-8772dadcdae0" />
 
-Pada menu Hapus Data, pengguna dapat menghapus data penghuni dengan memasukkan ID penghuni yang ingin dihapus. Sistem nantinya akan mencari data berdasarkan ID yang dimasukkan, kemudian menghapus data penghuni tersebut dari daftar aspabila ID ditemukan.
+Pada menu Hapus Data, pengguna dapat menghapus data penghuni dengan memasukkan ID penghuni yang ingin dihapus. Sistem nantinya akan mencari data berdasarkan ID yang dimasukkan, kemudian menghapus data penghuni tersebut dari daftar apabila ID ditemukan.
 
 <img width="372" height="105" alt="image" src="https://github.com/user-attachments/assets/a6eaf2e0-ecba-46b5-a710-5c63f51f86c5" />
 
@@ -250,13 +250,13 @@ Pada proyek Sistem Manajemen Panti Jompo Rumah Senja, penerapan MVC dibagi menja
 | controller | PantiService | Bertugas sebagai penghubung antara bagian Model dan View, sekaligus mengatur alur proses dalam program. Class PantiService menangani berbagai operasi terhadap data penghuni, seperti menambahkan, menampilkan, memperbarui, menghapus, dan mencari data berdasarkan input yang diberikan oleh pengguna. |
 | view | PantiView | Digunakan untuk menampilkan menu utama, informasi data penghuni, hasil proses, serta pesan yang diberikan oleh sistem kepada pengguna. Dengan adanya package view, proses tampilan program dapat dipisahkan dari logika pengolahan data sehingga struktur program menjadi lebih terorganisir dan mudah dipahami.
 
-Selain ketiga package di atas, pada struktur file program ini, saya mengguankan package lain seperti :
+Selain ketiga package di atas, pada struktur file program ini, saya menggunakan package lain seperti :
 
 | Lapisan | File | Keterangan |
 |---|---|---|
 | model.dao | PantiDAO | `model.dao` adalah package untuk kelas Data Access Object, dan `PantiDAO` bertugas menjalankan operasi data penghuni Panti Jompo Rumah Senja (tambah, tampil, ubah, hapus, cari) melalui query ke database. Pemisahan ini membuat kelas lain tidak perlu mengetahui detail SQL. |
 | utility | InputValidasi | Digunakan untuk membantu proses validasi input dari pengguna. Class ini menyediakan method yang digunakan untuk memastikan data yang dimasukkan sesuai dengan ketentuan program, seperti memvalidasi input angka, ID penghuni, serta mencegah kesalahan input yang dapat menyebabkan program mengalami error. |
-| config | Koneksi & TestKoneksi | Class TestKoneksi disini berfungsi untuk mengetest apakah program telah tersambung dengan databse dan class Koneksi berfungsi untuk mengintegrasikan program dengan database. |
+| config | Koneksi & TestKoneksi | Class TestKoneksi disini berfungsi untuk mengetest apakah program telah tersambung dengan database dan class Koneksi berfungsi untuk mengintegrasikan program dengan database. |
 
 
 ## 3.2 Inheritance
@@ -318,7 +318,7 @@ dimodifikasi secara langsung dan sembarangan.
 
 ## 3.4 Constructor
 
-**1. Prnghuni Panti**
+**1. Penghuni Panti**
 
 <img width="601" height="185" alt="image" src="https://github.com/user-attachments/assets/2637d8ea-2890-4f2b-8677-8db478a6188c" />
 
@@ -456,7 +456,7 @@ Gambar di atas menunjukkan class TestKoneksi, yaitu class untuk menguji apakah p
 Class ini memanggil Koneksi.getConnection() lalu mengecek hasilnya. Jika koneksi berhasil, program menampilkan pesan bahwa database siap 
 digunakan. Jika gagal, program menampilkan pesan untuk memeriksa URL, username, password, dan apakah service MySQL sudah menyala.
 
-**3. Import Depedency**
+**3. Import Dependency**
  
 <img width="975" height="342" alt="image" src="https://github.com/user-attachments/assets/25cfe6ad-41cb-4581-99ce-22446b2e7e44" />
 
@@ -464,7 +464,7 @@ Gambar di atas menunjukkan penambahan dependency di file pom.xml. Dependency ini
 program Java bisa berbicara dengan MySQL melalui JDBC. Tanpa dependency ini, program tidak tahu cara terhubung ke MySQL, sehingga koneksi akan 
 gagal. 
 
-**4. DAO & Prepard Statement**
+**4. DAO & Prepared Statement**
 
  <img width="975" height="539" alt="image" src="https://github.com/user-attachments/assets/6f7702ab-14e7-4a03-88a1-ed98670fb2e9" />
 
