@@ -84,13 +84,13 @@ Gambar di atas menampilkan Menu Tambah Data pada program Sistem Manajemen Panti 
 
 ### 2.2.1 Tambah Data Penghuni Mandiri
 
-<img width="373" height="222" alt="image" src="https://github.com/user-attachments/assets/953266d0-acc7-4467-a8da-e34166e7d2ea" />
+<img width="377" height="225" alt="image" src="https://github.com/user-attachments/assets/013d4cff-9b3e-4ceb-bf4b-1b92bf379787" />
 
 Gambar di atas menampilkan informasi yang perlu diinput untuk menambahkan data Penghuni Mandiri. Informasi yang dimasukkan terdiri dari data umum penghuni, yaitu ID, nama, usia, jenis kelamin, nomor telepon keluarga, dan kondisi kesehatan. Selain itu, terdapat informasi tambahan khusus untuk Penghuni Mandiri, yaitu hobi dan kegiatan harian. Data tersebut digunakan untuk memberikan informasi yang lebih lengkap mengenai penghuni.
 
 ### 2.2.2 Tambah Data Penghuni Intensif
 
-<img width="377" height="239" alt="image" src="https://github.com/user-attachments/assets/6d2bcd97-239d-4c51-9af6-bfb1a273b526" />
+<img width="375" height="240" alt="image" src="https://github.com/user-attachments/assets/455229f3-25e8-48ec-9457-1949d693eb0a" />
 
 Gambar di atas menampilkan informasi yang perlu diinput untuk menambahkan data Penghuni Intensif. Informasi yang dimasukkan terdiri dari data umum penghuni, yaitu ID, nama, usia, jenis kelamin, nomor telepon keluarga, dan kondisi kesehatan. Selain itu, terdapat informasi tambahan khusus untuk Penghuni Intensif, yaitu nama perawat, jadwal kontrol medis, dan jadwal pemberian obat. Informasi tambahan tersebut digunakan untuk mendukung pengelolaan dan pemantauan kebutuhan khusus penghuni intensif.
 
@@ -102,21 +102,19 @@ Gambar di atas menampilkan Menu Tampilkan Data pada program Sistem Manajemen Pan
 
 ### 2.3.1 Tampilkan Seluruh Data Penghuni
 
-<img width="379" height="435" alt="image" src="https://github.com/user-attachments/assets/6771e8f3-8f38-4ee7-b101-a0290fe545ab" />
-
-<img width="374" height="392" alt="image" src="https://github.com/user-attachments/assets/95313aa7-9473-4085-8269-2ba19f542231" />
+<img width="376" height="440" alt="image" src="https://github.com/user-attachments/assets/3ec01193-87c1-418e-9303-995682286a2e" />
 
 Gambar di atas menunjukkan seluruh data penghuni Panti Jompo Rumah Senja, yang terdiri dari Penghuni Mandiri dan Penghuni Intensif. Ketika pengguna memilih menu untuk menampilkan seluruh data, sistem akan menampilkan informasi dari kedua jenis penghuni tersebut.
 
 ### 2.3.2 Tampilkan Data Penghuni Intensif
 
-<img width="375" height="456" alt="image" src="https://github.com/user-attachments/assets/381a85ee-7e8e-421e-b79d-9bd2a3454bd9" />
+<img width="375" height="255" alt="image" src="https://github.com/user-attachments/assets/b5c37c0b-6b79-47ee-853f-5f0489b45aa2" />
 
 Gambar di atas menunjukkan data Penghuni Intensif. Ketika pengguna memilih menu ini, sistem hanya akan menampilkan informasi penghuni yang termasuk dalam kategori Penghuni Intensif, sehingga data dapat dilihat secara lebih spesifik sesuai dengan jenis penghuni yang dipilih.
 
 ### 2.3.3 Tampilkan Data Penghuni Mandiri
 
-<img width="378" height="427" alt="image" src="https://github.com/user-attachments/assets/b5949d6b-97ab-4f89-bb43-2022fa48048e" />
+<img width="377" height="239" alt="image" src="https://github.com/user-attachments/assets/fb903fa8-0de2-4730-a9d3-2ef54578ffd1" />
 
 Gambar di atas menunjukkan data Penghuni Mandiri. Ketika pengguna memilih menu ini, sistem hanya akan menampilkan informasi penghuni yang termasuk dalam kategori Penghuni Mandiri, sehingga data dapat dilihat secara lebih spesifik sesuai dengan jenis penghuni yang dipilih.
 
